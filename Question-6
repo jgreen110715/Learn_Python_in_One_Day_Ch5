@@ -33,3 +33,7 @@ venue = {1 : 'Tokyo to Osaka', 2: 'Osaka', 3: 'Kyoto', 4: 'Kyoto to Nara', 5: 'N
 day = {1 : 'Tuesday', 2 : 'Wednesay', 3 : 'Thursday', 4 : 'Friday', 5 : 'Saturday', 6 : 'Sunday', 7 : 'Monday'}
 
 trav = "Travel Itnerary"
+
+print(trav)
+for day_number in range (1,7):
+    print('Day %s(%s): %s' %(day_number, day[day_number], venue[day_number]))
