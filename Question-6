@@ -28,12 +28,12 @@ Hint: You need to use dictionaries in your solution.
 
 
 Solution:
-venue = {1 : 'Tokyo to Osaka', 2: 'Osaka', 3: 'Kyoto', 4: 'Kyoto to Nara', 5: 'Nara to Osaka', 6: 'Osaka to Tokyo', 7: 'Tokyo'}
-                            
-day = {1 : 'Tuesday', 2 : 'Wednesay', 3 : 'Thursday', 4 : 'Friday', 5 : 'Saturday', 6 : 'Sunday', 7 : 'Monday'}
 
-trav = "Travel Itnerary"
+def travel_itinerary(itinerary):
+    venue = {1 : 'Tokyo to Osaka', 2: 'Osaka', 3: 'Kyoto', 4: 'Kyoto to Nara', 5: 'Nara to Osaka', 6: 'Osaka to Tokyo', 7: 'Tokyo'}
+    day = {1 : 'Tuesday', 2 : 'Wednesay', 3 : 'Thursday', 4 : 'Friday', 5 : 'Saturday', 6 : 'Sunday', 7 : 'Monday'}
+    print('\nTravel Itinerary\n')
+    for day_number in range (1,8):
+        print('Day %s(%s): %s' %(day_number, day[day_number], venue[day_number]))
 
-print(trav)
-for day_number in range (1,7):
-    print('Day %s(%s): %s' %(day_number, day[day_number], venue[day_number]))
+travel_itinerary(1)
