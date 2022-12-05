@@ -1,0 +1,35 @@
+Question:
+
+The Code belose shows the last few lines of a program:
+print('Day 1(%s): %s' %(day[1], venue[1]))
+print('Day 2(%s): %s' %(day[2], venue[2]))
+print('Day 3(%s): %s' %(day[3], venue[3]))
+print('Day 4(%s): %s' %(day[4], venue[4]))
+print('Day 5(%s): %s' %(day[5], venue[5]))
+print('Day 6(%s): %s' %(day[6], venue[6]))
+print('Day 7(%s): %s' %(day[7], venue[7]))
+
+The lines before them are missing.
+
+Add the missing lines so that the program prints the following output:
+
+-------------------------------------------------
+Travel Itinerary
+
+Day 1 (Tuesday): Tokyo to Osaka
+Day 2 (Wednesday): Osaka
+Day 3 (Thursday): Kyoto
+Day 4 (Friday): Kyoto to Nara
+Day 5 (Saturday): Nara to Osaka
+Day 6 (Sunday): Osaka to Tokyo
+Day 7 (Monday): Tokyo
+------------------------------------------------
+Hint: You need to use dictionaries in your solution.
+
+
+Solution:
+venue = {1 : 'Tokyo to Osaka', 2: 'Osaka', 3: 'Kyoto', 4: 'Kyoto to Nara', 5: 'Nara to Osaka', 6: 'Osaka to Tokyo', 7: 'Tokyo'}
+                            
+day = {1 : 'Tuesday', 2 : 'Wednesay', 3 : 'Thursday', 4 : 'Friday', 5 : 'Saturday', 6 : 'Sunday', 7 : 'Monday'}
+
+trav = "Travel Itnerary"
